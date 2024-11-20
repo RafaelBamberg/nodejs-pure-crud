@@ -43,7 +43,7 @@ const handlePostItem = (res, body) => {
       res.end(JSON.stringify(newItem));
     } catch (error) {
       console.error('Error parsing JSON:', error);
-      res.statusCode = 400; // Bad Request
+      res.statusCode = 400;
       res.end(JSON.stringify({ message: 'Invalid JSON' }));
     }
   };

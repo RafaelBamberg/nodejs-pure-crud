@@ -1,0 +1,23 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3000/items
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "id": "1",
+      "name": "Item One",
+      "description": "Description for Item One"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: PUT
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/items
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "New Item",
+    "description": "Description for New Item"
+  }
+}
